@@ -1,0 +1,8 @@
+<?php
+try{
+$db = new  PDO('mysql:host=localhost;dbname=plantify','root','', [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+]);
+}catch(PDOException  $ex){
+    die('erreur db');
+}
